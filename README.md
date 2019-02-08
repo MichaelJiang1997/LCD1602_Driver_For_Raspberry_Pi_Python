@@ -4,7 +4,7 @@
 树莓派3b的Lcd1602驱动(Python版)<br/>
 
 运行例子方法：</br>
-1.确保你的树莓派已经安装 wiringPi</br>
+1.确保你的树莓派已经安装 rpi.gpio 如果没有<code>sudo apt install python-rpi.gpio</code></br>
 2.连线</br>
 VSS -> GND</br>
 VDD -> VCC</br>
@@ -22,7 +22,7 @@ D6   -> GPIO24</br>
 D7   -> GPIO25</br>
 A   -> VCC</br>
 K   -> GND</br>
-3.切换到项目目录然后<code>g++ lcd1602.cpp example_tiny_clock.cpp -lwiringPi  && ./a.out</code></br>
+3.切换到项目目录然后<code>python example_tiny_clock.py</code></br>
 4.完成</br>
 <br/>
 更新日志<br/>
