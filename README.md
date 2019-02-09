@@ -2,7 +2,7 @@
 <br>LCD 1602 Driver For Raspberry Pi 3B (Python)
 
 树莓派3b的Lcd1602驱动(Python版)<br/>
-
+开发环境 <code>Python 3.5.3 (default, Sep 27 2018, 17:25:39)</code><br/>
 运行例子方法：</br>
 1.确保你的树莓派已经安装 rpi.gpio 如果没有<code>sudo apt install python-rpi.gpio</code></br>
 2.连线</br>
