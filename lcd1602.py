@@ -103,7 +103,7 @@ class LCD1602():
                 GPIO.output(self._en_pin, GPIO.LOW)
                 time.sleep(self.DATA_SLEEP)
 
-        #写字符串 x:行数 y:列数 (默认屏幕左上角为 第一行第一列) *s为字符串地址
+        #写字符串 x:列数 y:行数 (默认屏幕左上角为 第一行第一列) *s为字符串地址
         def Write_String(self, x, y, s):
                 self.__Write_Com(0x80)
                 if y == 1:
@@ -135,7 +135,7 @@ class LCD1602():
                 for i in range(8):
                         self.__Write_User_Dat(c[i])
 
-        #写用户自定义字符串 x:行数 y:列数 (默认屏幕左上角为 第一行第一列) index为用户自定义字符串编号
+        #写用户自定义字符串 x:列数 y:行数 (默认屏幕左上角为 第一行第一列) index为用户自定义字符串编号
         def Write_User_Char(self, x, y, index):
                 self.__Write_Com(0x80)
                 if y == 1:
